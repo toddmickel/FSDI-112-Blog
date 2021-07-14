@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="post_entry">
+            <h1>{{ post.title }}</h1>
+            <p>By {{ post.author }}</p>
+            <hr>
+            <p>{{ post.body }}</p>
+            <a href="{% url 'home' %}">Home</a> | 
+            <a href="#">Edit Post</a> | <a href="#">Delete Post</a>        
+        </div>
+    </div>
+{% endblock content %}
