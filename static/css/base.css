@@ -9,31 +9,15 @@ header {
     display: flex;
 }
 
-header h1 a {
-    font-weight: 500;
-    color: red;
-    text-decoration: none;
+.row {
+    margin-bottom: 3rem;
 }
 
-.post-entry {
-    margin-bottom: 2rem;
+.card {
+    background-color: rgb(210, 210, 210);
+    height: 100%;
 }
 
-.post-entry h2 {
-    margin: 0.5rem 0;
-}
-
-.post-entry h2 a,
-.post-entry h2 a:visited {
-    color:blue;
-    text-decoration: none;
-}
-
-.post-entry p {
-    margin: 0;
-    font-weight: 300;
-}
-
-.post-entry h2 a:hover {
-    color: red;
+.card:hover {
+    background-color:rgb(245, 245, 245);
 }

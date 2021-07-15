@@ -9,8 +9,9 @@
             <p>By {{ post.author }}</p>
             <hr>
             <p>{{ post.body }}</p>
-            <a href="{% url 'home' %}">Home</a> | 
-            <a href="{% url 'post_edit' post.pk %}">Edit Post</a> | <a href="{% url 'post_delete' post.pk %}">Delete Post</a>        
+            <a class="btn btn-secondary btn-sm" href="{% url 'home' %}">Home</a> 
+            <a class="btn btn-secondary btn-sm" href="{% url 'post_edit' post.pk %}">Edit Post</a>
+            <a class="btn btn-secondary btn-sm" href="{% url 'post_delete' post.pk %}">Delete Post</a>        
         </div>
     </div>
 {% endblock content %}

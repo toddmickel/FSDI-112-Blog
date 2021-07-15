@@ -5,19 +5,40 @@
 {% block content %}
     <div class="container">
         <header>
-            <h1>
-                <a href="#">Entries</a>
-            </h1>
+            <h1>All Blog Entries</h1>
         </header>
-        {% for post in object_list %}
-            <div class="post-entry">
-                <h2>
-                    <a href="{% url 'post_detail' post.pk %}">
-                        {{ post.title }}
-                    </a>
-                </h2>
-                <p>{{ post.body }}</p>
+        <div class="container">
+            <div class="row justify-content-start">
+                {% for post in object_list %}
+                    {% if forloop.counter|divisibleby:4 %}   
+                    </div>
+                    <div class="row justify-content-start">           
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-body post-entry">
+                                    <h2 class="card-title">{{ post.title }}</h2>
+                                    <p class="card-text">{{ post.body|truncatechars:90 }}</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a class="btn btn-secondary btn-sm" href="{% url 'post_detail' post.pk %}">Read Post</a>
+                                </div>
+                            </div>                            
+                        </div>
+                    {% else %}
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-body post-entry">
+                                    <h2 class="card-title">{{ post.title }}</h2>
+                                    <p class="card-text">{{ post.body|truncatechars:90 }}</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a class="btn btn-secondary btn-sm" href="{% url 'post_detail' post.pk %}">Read Post</a>
+                                </div>
+                            </div>                            
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
-        {% endfor %}
+        </div>
     </div>
 {% endblock content %}
