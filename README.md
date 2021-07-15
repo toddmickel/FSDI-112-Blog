@@ -9,8 +9,9 @@ This is a simple blog site that will be updated with additional functionality as
 >- Used Bootstrap to publish my entries on cards
 >   - Used the CSS :hover Selector to highlight an entry when hovered over with the mouse
 >- Used the 'truncatechars' filter to only display the first 90 characters of an entry on a card
->- Provided a button to allow the user to read and interact with the full post.
+>- Provided a button to allow the user to read and interact with the full post
 >- Updated the links on the post detail page to be buttons
+>- Installed the 'mathfilters' module and used it to ensure exactly three posts were populated per row
 
 >## Future Functionality Considerations
 >
