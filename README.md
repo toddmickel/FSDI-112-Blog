@@ -2,7 +2,7 @@
 
 ## A Simple Blog Site for SDGKU's FSDI courses
 
-This is a simple blog site that will be updated with additional functionality as our classes progress.  As currently published, it meets the requirements of the Competency Report for FSDI 112.  It is availabe on Heroku at <https://abracadabrant-croissant-58014.herokuapp.com/>.
+This is a simple blog site that has been updated with additional functionality as our classes progressed.  As currently published, it meets the requirements of the Competency Report for FSDI 112.  It is availabe on Heroku at <https://abracadabrant-croissant-58014.herokuapp.com/>.
 
 >In addition to basic functionality required by the CR, I did the following:
 >- Learned how to serve static files on Heroku and included a CSS file to format my entries
