@@ -2,7 +2,7 @@
 
 python3 manage.py test
 
-if [ -z $? ]; then
+if [ $? -eq 0 ]; then
 	git push heroku main
 	exit 0
 fi
